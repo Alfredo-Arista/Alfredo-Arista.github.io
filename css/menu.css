@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://weloveiconfonts.com/api/?family=fontawesome|typicons);
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+.contenedor_menu{
+    padding: 0;
+    background: #092327;
+    background: rgba(0,0,0,1);
+    width: 100%;
+}
+
+#contenedor_menu_interno{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#logo_menu{
+    display: inline-block;
+    font-family: cursive;
+    font-weight:1000;
+    text-align: center;
+    font-size: 2.7em;
+    color: #17a68a;
+    /*color: #ef8354;*/
+    padding-top:8px;
+}
+
+#menu{
+    float: right;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,1);
+    transition: all 0.5s;
+    transform: translateX(-100%);
+}
+#menu a{
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+    transition: all 500ms ease;
+}
+#menu a:hover{
+    background: #17a68a;
+    /*background: #ef8354;*/
+}
+
+#menu-bar {
+    display: none;
+}
+
+#contenedor_menu_interno label {
+    float: right;
+    font-size: 28px;
+    margin: 13px 0;
+    cursor: pointer;
+}
+
+#menu-bar:checked ~ #menu {
+    transform: translateX(0%);
+}
+
+@media (max-width:980px) {
+    #logo_menu{
+        font-size: 2em;
+    }
+    #menu a{
+        padding: 15px;
+    }
+}
+
+@media (max-width:480px) {
+    #logo_menu{
+        font-size: 1.7em;
+    }
+    #contenedor_menu_interno label {
+        margin: 10px 0;
+    }
+}
+
+
+@media (min-width:780px) {
+    #menu {
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+    }
+    
+    #contenedor_menu_interno label { 
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
