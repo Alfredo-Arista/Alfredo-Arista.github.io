@@ -1,0 +1,32 @@
+.contenedor_main{
+    width:100%;
+    background:fixed no-repeat 50% 50%;
+    background-size:cover;
+    background-image:url('../../src/minimalist-design.jpgg');
+}
+
+.contenedor_main section{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    display:block;
+    text-align:center;
+}
+
+#content_section_one, #content_section_two{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:20px;
+    padding-bottom:20px;
+    display:block;
+    text-align:center;
+}
+
+
+
+
+
+
+
+
